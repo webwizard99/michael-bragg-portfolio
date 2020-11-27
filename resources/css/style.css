@@ -5,7 +5,9 @@
 .title-text {
   color: rgb(230, 235, 240);
   margin: auto;
+  text-align: center;
   font-family: 'Goldman', cursive;
+  padding: 1rem;
 }
 
 .navbar {

@@ -1,5 +1,10 @@
+.title {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,9,9,1) 35%, rgba(9,11,11,1) 100%);
+}
 .title-text {
   color: rgb(230, 235, 240);
+  margin: auto;
   font-family: 'Goldman', cursive;
 }
 

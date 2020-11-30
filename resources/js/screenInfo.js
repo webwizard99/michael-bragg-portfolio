@@ -1,4 +1,4 @@
-import uiController from './uiController';
+import uiController from './uiController.js';
 
 const screenInfo = (function(){
   let isPc = true;

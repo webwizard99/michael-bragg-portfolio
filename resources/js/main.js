@@ -1,5 +1,5 @@
-import screenInfo from './screenInfo';
-import uiController from './uiController';
+import screenInfo from './screenInfo.js';
+import uiController from './uiController.js';
 
 const main = (function(){
   return {

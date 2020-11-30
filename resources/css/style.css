@@ -13,3 +13,24 @@
 .navbar {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.dark-background {
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,22,22,1) 35%, rgba(27,34,34,1) 100%);
+}
+
+.light-text, .icon-light {
+  color: rgb(235, 240, 245);
+}
+
+.toggler-dark {
+  background: rgb(20, 25, 30);
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}

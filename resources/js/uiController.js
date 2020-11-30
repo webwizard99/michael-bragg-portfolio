@@ -35,7 +35,7 @@ const uiController = (function(){
     </nav>`
 
   const setPcNavbar = function() {
-    const navContainer = document.querySelector(navContainer);
+    const navContainerDOM = document.querySelector(navContainer);
     navContainer.innerHTML = pcNavbar;
   }
 

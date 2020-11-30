@@ -2,7 +2,7 @@ import screenInfo from './screenInfo.js';
 
 const uiController = (function(){
   const mainContainer = 'body';
-  const navContainer = 'nav-container';
+  const navContainer = '.nav-container';
 
   let activeMenu = 1;
 

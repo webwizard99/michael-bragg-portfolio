@@ -1,4 +1,4 @@
-import screenInfo from './screenInfojs';
+import screenInfo from './screenInfo.js';
 
 const uiController = (function(){
   const mainContainer = 'body';

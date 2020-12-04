@@ -1,5 +1,6 @@
 import screenInfo from './screenInfo.js';
-import uiController from './uiController.js';
+// import uiController from './uiController.js';
+import navbar from './navbar.js';
 
 const main = (function(){
   let activeMenu = 1;
@@ -11,7 +12,7 @@ const main = (function(){
   return {
     init: function() {
       screenInfo.init();
-      uiController.initNavbar();
+      navbar.initNavbar();
     },
     getActiveMenu: function() {
       return activeMenu;

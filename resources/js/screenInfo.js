@@ -42,7 +42,8 @@ const screenInfo = (function(){
   }
 
   const setScreenInfo = function() {
-    const app = document.querySelector(uiController.getMainContainer());
+    const domStrings = uiController.getDomStrings();
+    const app = document.querySelector(domStrings.mainContainer);
     const docDimensions = app.getBoundingClientRect();
     height = docDimensions.height;
     width = docDimensions.width;

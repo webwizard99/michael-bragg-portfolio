@@ -33,7 +33,7 @@ const navbar = (function(){
     menuItems.forEach((item, itemNum) => {
       menuItemsDOM += getPcNavItem({ item, itemNum, menu })
     });
-    menuItems = menuItemsDOM.replace(',', '');
+    menuItemsDOM = menuItemsDOM.replace(',', '');
     newNavbar = newNavbar.replace('%menuItems', menuItemsDOM);
     navContainerDOM.innerHTML = newNavbar;
 

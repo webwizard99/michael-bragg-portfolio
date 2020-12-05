@@ -1,13 +1,13 @@
 import uiController from './uiController.js';
 import screenInfo from './screenInfo.js';
-import main from './main.js';
 
 const navbar = (function(){
   const menuItems = ['About Me', 'Projects', 'Media'];
 
-  const getPcNavItem = function(item, num) {
+  const getPcNavItem = function(payload) {
+    const { item, num, menu } = payload;
     let navClass = "pc-nav-item";
-    if (num === main.getActiveMenu()) {
+    if (num === menu) {
       navClass += " active";
     }
     return `
@@ -25,12 +25,12 @@ const navbar = (function(){
       </div>
     </nav>`
 
-  const setPcNavbar = function() {
+  const setPcNavbar = function(menu) {
     const domStrings = uiController.getDomStrings();
     const navContainerDOM = document.querySelector(domStrings.navContainer);
     let newNavbar = pcNavbar;
     let menuItemsDOM = menuItems.map((item, itemNum) => {
-      return getPcNavItem(item, itemNum)
+      return getPcNavItem({ item, itemNum, menu })
     });
     menuItems = menuItems.replace(',', '');
     newNavbar = newNavbar.replace('%menuItems', menuItemsDOM);
@@ -42,9 +42,9 @@ const navbar = (function(){
     getPcNavbar: function() {
       return pcNavbar;
     },
-    initNavbar: function() {
+    initNavbar: function(menu) {
       if (screenInfo.getIsPc()) {
-        setPcNavbar();
+        setPcNavbar(menu);
       }
     }
   }

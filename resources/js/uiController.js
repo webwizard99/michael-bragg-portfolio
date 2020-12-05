@@ -1,4 +1,5 @@
 // import screenInfo from './screenInfo.js';
+import navbar from './navbar.js';
 
 const uiController = (function(){
   const DOMStrings = {
@@ -10,6 +11,10 @@ const uiController = (function(){
   return {
     getDomStrings: function() {
       return DOMStrings;
+    },
+    init: function(payload) {
+      const { activeMenu } = payload;
+      navbar.initNavbar(activeMenu);
     }
   }
 }());

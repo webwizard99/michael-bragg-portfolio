@@ -29,8 +29,9 @@ const navbar = (function(){
     const domStrings = uiController.getDomStrings();
     const navContainerDOM = document.querySelector(domStrings.navContainer);
     let newNavbar = pcNavbar;
-    let menuItemsDOM = menuItems.map((item, itemNum) => {
-      return getPcNavItem({ item, itemNum, menu })
+    let menuItemsDOM;
+    menuItems.reduce((item, itemNum) => {
+      menuItemsDOM += getPcNavItem({ item, itemNum, menu })
     });
     menuItems = menuItems.replace(',', '');
     newNavbar = newNavbar.replace('%menuItems', menuItemsDOM);

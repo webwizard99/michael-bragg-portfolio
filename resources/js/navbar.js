@@ -30,10 +30,10 @@ const navbar = (function(){
     const navContainerDOM = document.querySelector(domStrings.navContainer);
     let newNavbar = pcNavbar;
     let menuItemsDOM;
-    menuItems.reduce((item, itemNum) => {
+    menuItems.forEach((item, itemNum) => {
       menuItemsDOM += getPcNavItem({ item, itemNum, menu })
     });
-    menuItems = menuItems.replace(',', '');
+    menuItems = menuItemsDOM.replace(',', '');
     newNavbar = newNavbar.replace('%menuItems', menuItemsDOM);
     navContainerDOM.innerHTML = newNavbar;
 

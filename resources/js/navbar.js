@@ -17,7 +17,7 @@ const navbar = (function(){
   }
 
   const pcNavbar = `
-    <nav class="dark-background light-text no-radius">
+    <nav class="dark-background light-text no-radius center-content">
       <div class="navbar-content">
         <ul class="pc-nav-menu">
           %menuItems

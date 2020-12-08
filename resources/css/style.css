@@ -13,6 +13,12 @@
   padding: 1rem;
 }
 
+/* universal styles */
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
 /* navbar styles */
 
 .navbar {
@@ -25,7 +31,7 @@
 
 .dark-background {
   background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,22,22,1) 35%, rgba(27,34,34,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,22,22,1) 35%, rgba(27,34,34,1) 100%);
 }
 
 .light-text, .icon-light, .light-text a {
@@ -55,6 +61,8 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,22,22,1) 35%, rgba
 }
 
 .pc-nav-item {
-  width: 3rem;
+  width: 12rem;
   text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }

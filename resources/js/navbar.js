@@ -29,7 +29,7 @@ const navbar = (function(){
     const domStrings = uiController.getDomStrings();
     const navContainerDOM = document.querySelector(domStrings.navContainer);
     let newNavbar = pcNavbar;
-    let menuItemsDOM;
+    let menuItemsDOM = '';
     menuItems.forEach((item, itemNum) => {
       menuItemsDOM += getPcNavItem({ item, itemNum, menu })
     });

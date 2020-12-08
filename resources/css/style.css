@@ -1,7 +1,10 @@
+/* title styles */
+
 .title {
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,9,9,1) 35%, rgba(9,11,11,1) 100%);
 }
+
 .title-text {
   color: rgb(230, 235, 240);
   margin: auto;
@@ -10,8 +13,14 @@
   padding: 1rem;
 }
 
+/* navbar styles */
+
 .navbar {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-container {
+  padding: 0px;
 }
 
 .dark-background {
@@ -33,4 +42,19 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,22,22,1) 35%, rgba
 
 .nav-item {
   margin-right: 1rem;
+}
+
+/* pc navbar styles */
+
+.navbar-content {
+  margin: auto;
+}
+
+.pc-nav-menu {
+  display: flex;
+}
+
+.pc-nav-item {
+  width: 3rem;
+  text-align: center;
 }

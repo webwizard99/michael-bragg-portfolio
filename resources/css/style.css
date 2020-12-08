@@ -50,15 +50,10 @@
   margin-right: 1rem;
 }
 
-.active {
+.active a {
   font-weight: 700;
 }
 
-.pc-nav-item:hover {
-  background: rgb(50,58,55);
-  background: linear-gradient(180deg, rgba(50,58,55,1) 0%, rgba(107,124,124,1) 35%, rgba(128,163,163,1) 100%);
-  color: rgb(30, 35, 40);
-}
 
 /* pc navbar styles */
 
@@ -73,6 +68,16 @@
 .pc-nav-item {
   width: 12rem;
   text-align: center;
-  font-size: 1.2rem;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pc-nav-item a {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.pc-nav-item:hover {
+  background: rgb(50,58,55);
+  background: linear-gradient(180deg, rgba(50,58,55,1) 0%, rgba(107,124,124,1) 35%, rgba(128,163,163,1) 100%);
+  color: rgb(30, 35, 40);
 }
